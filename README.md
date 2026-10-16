@@ -7,4 +7,7 @@ The goal of this project is to build an RC Car and controller using a microcontr
   - Apply our learning of circuits
   - Practice documentation
   - Create a controller that can be used in all future projects
+  - Will Simmons needs to lock in
+  - Will are you even seeing this
+  - Will we need you to do the math
 
