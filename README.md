@@ -6,5 +6,7 @@ The goal of this project is to build an RC Car and controller using a microcontr
   - Make a PCB
   - Apply our learning of circuits
   - Practice documentation
+  - practice using git
   - Create a controller that can be used in all future projects
+  - Create friendship
 
