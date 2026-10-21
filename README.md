@@ -14,5 +14,9 @@ The goal of this project is to build an RC Car and controller using a microcontr
   - Will we need you to do the math
 
 | Car Componets | Controller Components |
-|:----------:|:-------------|
+|:----------:|:-------------:|
 | Arduino Nano | Arduino ESP32 Nano |
+| nRF24l01 | nRf24l01 |
+| 2 3-6v Motor | L2C OLED |
+| Angle Servo | Joystick |
+| H-Bridge (L293D) | 4 Buttons
