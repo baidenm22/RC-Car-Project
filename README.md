@@ -13,3 +13,6 @@ The goal of this project is to build an RC Car and controller using a microcontr
   - Will are you even seeing this
   - Will we need you to do the math
 
+| Car Componets | Controller Components |
+|:----------:|:-------------|
+| Arduino Nano | Arduino ESP32 Nano |
