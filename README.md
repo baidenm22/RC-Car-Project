@@ -1,4 +1,4 @@
-### RC Car Project
+# RC Car Project
 This is the repository for all the files in our RC Car Project at BYU in Fall 2026
 
 ## The Idea
@@ -23,9 +23,9 @@ The goal of this project is to build an RC Car and controller using a microcontr
 | Angle Servo | Joystick |
 | H-Bridge (L293D) | 4 Buttons
 
-## How we are currently connecting our project to the microcontroller
+### How we are currently connecting our project to the microcontroller
 
-# Controller
+#### Controller
 | Pin | Componet | 
 |:----:|:----:|
 |VIN|5v Regulator|
@@ -46,7 +46,7 @@ The goal of this project is to build an RC Car and controller using a microcontr
 |A1|	Joystick VRY|
 |A2|	Joystick VRX|
 
-# Car
+#### Car
 | Pin | Componet | 
 |:----:|:----:|
 |VIN|	5v Regulator|
