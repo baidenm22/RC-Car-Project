@@ -13,6 +13,8 @@ The goal of this project is to build an RC Car and controller using a microcontr
   - Will are you even seeing this
   - Will we need you to do the math
 
+## What is needed
+
 | Car Componets | Controller Components |
 |:----------:|:-------------:|
 | Arduino Nano | Arduino ESP32 Nano |
@@ -20,3 +22,47 @@ The goal of this project is to build an RC Car and controller using a microcontr
 | 2 3-6v Motor | L2C OLED |
 | Angle Servo | Joystick |
 | H-Bridge (L293D) | 4 Buttons
+
+## How we are currently connecting our project to the microcontroller
+
+# Controller
+| Pin | Componet | 
+|:----:|:----:|
+|VIN|5v Regulator|
+|GND	|GND|
+|3.3V|nRF24l01 VCC|
+|D13	|nRF24l01 SCK|
+|D12	|nRF24l01 MISO|
+|D11|	nRF24l01 MOSI|
+|D10|	Button 1|
+|D9|	Button 2|
+|D8|	nRF24l01 CSN|
+|D7|	nRF24l01 CE|
+|D5|	L2C LCD SDA|
+|D4|	L2C LCD SCL|
+|D3|	Button 3|
+|D2|	Button 4|
+|D1|	Joystick button SW|
+|A1|	Joystick VRY|
+|A2|	Joystick VRX|
+
+# Car
+| Pin | Componet | 
+|:----:|:----:|
+|VIN|	5v Regulator|
+|GND|	GND|
+|3.3V|	nRF24l01 VCC|
+|D13|	nRF24l01 SCK|
+|D12|	nRF24l01 MISO|
+|D11|	nRF24l01 MOSI|
+|D10|	Right Motor INPUT 1|
+|D9|	Right Motor INPUT 2|
+|D8|	nRF24l01 CSN|
+|D7|	nRF24l01 CE|
+|D6|	Servo Instructions|
+|D5|	Right Motor PWM Speed|
+|D4|	IR Sensor INPUT|
+|D3|	Left Motor PWM Speed|
+|D2|	Left Motor INPUT 3|
+|D1|	Left Motor INPUT 4|
+
