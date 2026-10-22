@@ -38,13 +38,13 @@ The goal of this project is to build an RC Car and controller using a microcontr
 |D9|	Button 2|
 |D8|	nRF24l01 CSN|
 |D7|	nRF24l01 CE|
-|D5|	L2C LCD SDA|
-|D4|	L2C LCD SCL|
+|D6| Joystick button SW|
 |D3|	Button 3|
 |D2|	Button 4|
-|D1|	Joystick button SW|
 |A1|	Joystick VRY|
 |A2|	Joystick VRX|
+|A4| L2C OLED SDA|
+|A5| L2C OLED SCL|
 
 #### Car
 | Pin | Componet | 
