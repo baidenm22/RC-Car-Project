@@ -22,6 +22,18 @@ Initial Communication:
 
 
 */
+struct packet {
+  uint16_t joystickX; //2 bytes
+  uint16_t joystickY; //2 bytes
+  uint8_t joystickButton; //1 byte
+  uint8_t button1; //1 byte
+  uint8_t button2; //1 byte
+  uint8_t button3; //1 byte
+  uint8_t button4; // 1 byte
+  //1 byte padding
+  //total: 10 bytes, so 22 bytes avliable to send
+} data;
+
 
 void setChannel(){
   bool selectedChannel = false;
