@@ -3,4 +3,5 @@
 	(lib (name "Custom Parts") (type "KiCad") (uri "C:/Users/Henry/Documents/GitHub/RC-Car-Project/Circuits/Custom Parts.pretty") (options "") (descr ""))
 	(lib (name "Custom Parts") (type "KiCad") (uri "C:/Users/aiden/OneDrive/Documents/RC-Car-Project/Circuits/Custom Parts.pretty") (options "") (descr ""))
 	(lib (name "Custom Parts") (type "KiCad") (uri "C:/Users/aiden/OneDrive/Documents/RC-Car-Project/Circuits/Custom Parts.pretty") (options "") (descr ""))
+	(lib (name "Custom Parts") (type "KiCad") (uri "C:/Users/aiden/OneDrive/Documents/RC-Car-Project/Circuits/Custom Parts.pretty") (options "") (descr ""))
 )

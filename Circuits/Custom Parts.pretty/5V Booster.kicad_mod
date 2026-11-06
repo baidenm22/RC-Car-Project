@@ -1,0 +1,100 @@
+(footprint "5V Booster"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ee4acd08-986b-4ef0-8697-dcdec9b9edf1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "5v Booster"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "79f52761-dbf8-43d0-8119-2b3f33ab10b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c600839-5e3a-4cfb-afd0-d7405a2ec1ca")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "935aaf8b-f53a-469b-81f4-ac2d998ffa62")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -12 -6.5)
+		(end 12 6.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "cd24b8a2-1f9f-469c-8b55-4fc40e152570")
+	)
+	(pad "1" smd roundrect
+		(at 11 -5.5 90)
+		(size 7 5)
+		(layers "*.Mask" "B.Cu")
+		(roundrect_rratio 0.15)
+		(uuid "242b8d83-4bc9-4be8-8bce-08765fa4868f")
+	)
+	(pad "2" smd roundrect
+		(at 11 5 90)
+		(size 7 5)
+		(layers "*.Mask" "B.Cu")
+		(roundrect_rratio 0.15)
+		(uuid "8ad4b6f7-7831-4733-b009-40697bfe7980")
+	)
+	(pad "3" smd roundrect
+		(at -11 5 90)
+		(size 7 5)
+		(layers "*.Mask" "B.Cu")
+		(roundrect_rratio 0.15)
+		(uuid "e6f717ca-ac66-4fb7-bb72-e7755314322d")
+	)
+	(pad "4" smd roundrect
+		(at -11 -5.5 90)
+		(size 7 5)
+		(layers "*.Mask" "B.Cu")
+		(roundrect_rratio 0.15)
+		(uuid "2fd73533-a494-4519-a813-b652cffcef60")
+	)
+	(embedded_fonts no)
+)
