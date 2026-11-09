@@ -449,38 +449,42 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x05_Socket"
-			(pin_names
-				(offset 1.016)
+		(symbol "Device:C"
+			(pin_numbers
 				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 7.62 0)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "Conn_01x05_Socket"
-				(at 0 -7.62 0)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at 0.9652 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -501,7 +505,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x05, script generated"
+			(property "Description" "Unpolarized capacitor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -512,17 +516,7 @@
 					)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
+			(property "ki_keywords" "cap capacitor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -533,7 +527,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -544,25 +538,13 @@
 					)
 				)
 			)
-			(symbol "Conn_01x05_Socket_1_1"
+			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -1.27 5.08) (xy -0.508 5.08)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -0.508 2.54)
-					)
-					(stroke
-						(width 0.1524)
+						(width 0.508)
 						(type default)
 					)
 					(fill
@@ -571,104 +553,22 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 0) (xy -0.508 0)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
-						(width 0.1524)
+						(width 0.508)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -5.08) (xy -0.508 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 4.572)
-					(mid -0.5058 5.08)
-					(end 0 5.588)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 2.032)
-					(mid -0.5058 2.54)
-					(end 0 3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -0.508)
-					(mid -0.5058 0)
-					(end 0 0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -3.048)
-					(mid -0.5058 -2.54)
-					(end 0 -2.032)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -5.588)
-					(mid -0.5058 -5.08)
-					(end 0 -4.572)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			)
+			(symbol "C_1_1"
 				(pin passive line
-					(at -5.08 5.08 0)
-					(length 3.81)
-					(name "Pin_1"
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -684,9 +584,9 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_2"
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -694,60 +594,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 3.81)
-					(name "Pin_5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2913,6 +2759,706 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "THB001P:THB001P"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -5.08 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "THB001P"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "THB001P:CNK_THB001P"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/THB001P_C&K.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Description" "Multi-Directional Thumbstick, 2 Axis, Center Momentary Switch, 12VDC, THB Series | C&K THB001P"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/THB001P_C&K.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MANUFACTURER" "C&K"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "19.85mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MPN" "THB001P"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "PARTREV" "27 Jan 22"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "SOURCE_URL" "https://www.snapeda.com/parts/THB001P/C%2526K/view-part/"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "THB001P_1_0"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -4.572 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.572 0) (xy -3.81 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 1.016) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -1.27 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.016) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 1.27 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.016) (xy 2.54 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy -1.27 -2.54)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.27) (xy 3.81 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.016) (xy 4.572 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.572 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "VR1_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "VR1_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "VR1_3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "THB001P_2_0"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -4.572 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.572 0) (xy -3.81 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 1.016) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -1.27 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.016) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 1.27 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.016) (xy 2.54 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy -1.27 -2.54)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.27) (xy 3.81 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.016) (xy 4.572 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.572 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "VR2_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "VR2_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "VR2_3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "THB001P_3_0"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -5.08 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 2.794 2.1336)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 0)
+					(radius 0.3302)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 2.921 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "A"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(hide yes)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "C"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(hide yes)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "D"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -3036,6 +3582,12 @@
 		(uuid "0c4205fa-bcbf-4de4-97cb-624ef9f34adb")
 	)
 	(junction
+		(at 179.07 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "123ee8a0-c489-4292-aa60-9ceff4c92c71")
+	)
+	(junction
 		(at 219.71 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3058,6 +3610,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "396ac94f-8626-40d8-b02c-b5a4a9cf6f8b")
+	)
+	(junction
+		(at 234.95 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60a3ac38-72d3-477b-b136-52e035252ea5")
 	)
 	(junction
 		(at 179.07 30.48)
@@ -3084,22 +3642,20 @@
 		(uuid "ae1ab6c0-2238-47fb-88f5-b94842bf9b09")
 	)
 	(junction
-		(at 72.39 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c0fe303f-7c7f-4b9f-9720-3da1163da59f")
-	)
-	(junction
-		(at 234.95 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c2456974-87b8-403f-bcd2-fdbfc2d86721")
-	)
-	(junction
 		(at 232.41 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e597413c-857c-4301-afff-440301aa06eb")
+	)
+	(wire
+		(pts
+			(xy 41.91 81.28) (xy 50.8 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02ffe86f-ef76-4a35-a790-b4106f45dc98")
 	)
 	(wire
 		(pts
@@ -3123,23 +3679,13 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 33.02) (xy 257.81 33.02)
+			(xy 264.16 64.77) (xy 255.27 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0f620283-cf72-4e7a-ae54-d66fb1bdde3c")
-	)
-	(wire
-		(pts
-			(xy 234.95 30.48) (xy 266.7 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c3789ad-158b-4e59-b3de-51de1f6b176e")
 	)
 	(wire
 		(pts
@@ -3170,16 +3716,6 @@
 			(type default)
 		)
 		(uuid "31464c15-1b9f-4777-9579-2a32fb6ba518")
-	)
-	(wire
-		(pts
-			(xy 41.91 81.28) (xy 50.8 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3374335c-c9d4-4e2e-9458-ad346aac5bf8")
 	)
 	(wire
 		(pts
@@ -3233,6 +3769,16 @@
 	)
 	(wire
 		(pts
+			(xy 278.13 92.71) (xy 269.24 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "424afade-fef4-4d90-8cd2-51516f7af5af")
+	)
+	(wire
+		(pts
 			(xy 92.71 30.48) (xy 99.06 30.48)
 		)
 		(stroke
@@ -3283,16 +3829,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 34.29) (xy 74.93 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5648c561-2898-41c2-ba43-f1df69349f3b")
-	)
-	(wire
-		(pts
 			(xy 166.37 53.34) (xy 157.48 53.34)
 		)
 		(stroke
@@ -3300,6 +3836,16 @@
 			(type default)
 		)
 		(uuid "59b6e715-46c4-4e16-8220-83e261624227")
+	)
+	(wire
+		(pts
+			(xy 234.95 30.48) (xy 255.27 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5afa96dd-eae4-406a-b30e-54e48a05bccc")
 	)
 	(wire
 		(pts
@@ -3373,16 +3919,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 34.29) (xy 72.39 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c9bd844-d298-4974-a41a-4c4281dc6ba0")
-	)
-	(wire
-		(pts
 			(xy 43.18 106.68) (xy 50.8 106.68)
 		)
 		(stroke
@@ -3400,16 +3936,6 @@
 			(type default)
 		)
 		(uuid "7761a9a6-36f5-471f-b07c-f231d68c16ed")
-	)
-	(wire
-		(pts
-			(xy 266.7 38.1) (xy 257.81 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "791b8f11-32b3-4420-ba0f-9f2335fa3d78")
 	)
 	(wire
 		(pts
@@ -3473,7 +3999,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 40.64) (xy 179.07 30.48)
+			(xy 179.07 40.64) (xy 179.07 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3483,23 +4009,13 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 71.12) (xy 50.8 71.12)
+			(xy 278.13 57.15) (xy 269.24 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8888641f-c094-4f89-9592-d325c8f75fde")
-	)
-	(wire
-		(pts
-			(xy 266.7 27.94) (xy 262.89 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "890be46a-58b8-4c77-9319-2a04cf92259a")
+		(uuid "8c2a144e-480f-4a8c-9764-ce2dd533764a")
 	)
 	(wire
 		(pts
@@ -3513,6 +4029,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 71.12) (xy 50.8 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92b8bbd9-d69a-4364-b10c-f8b44a40906d")
+	)
+	(wire
+		(pts
 			(xy 111.76 55.88) (xy 123.19 55.88)
 		)
 		(stroke
@@ -3520,16 +4046,6 @@
 			(type default)
 		)
 		(uuid "93e32d61-7649-4b3d-8c56-f53b13fa1769")
-	)
-	(wire
-		(pts
-			(xy 69.85 31.75) (xy 77.47 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94996c57-568e-4a7f-b497-ca06525edd52")
 	)
 	(wire
 		(pts
@@ -3553,6 +4069,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 107.95) (xy 269.24 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cc861a4-8095-4501-8160-bcebffe47f68")
+	)
+	(wire
+		(pts
 			(xy 166.37 60.96) (xy 157.48 60.96)
 		)
 		(stroke
@@ -3560,6 +4086,16 @@
 			(type default)
 		)
 		(uuid "a79f6dd5-9452-4b32-8eed-ef6cf46903ca")
+	)
+	(wire
+		(pts
+			(xy 278.13 74.93) (xy 269.24 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab6e5a3b-0cb6-475c-b56f-e39c9775fe9f")
 	)
 	(wire
 		(pts
@@ -3593,7 +4129,17 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 35.56) (xy 257.81 35.56)
+			(xy 179.07 36.83) (xy 179.07 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afc1801f-3635-4f5c-aa5d-9b7b156fe30c")
+	)
+	(wire
+		(pts
+			(xy 255.27 82.55) (xy 264.16 82.55)
 		)
 		(stroke
 			(width 0)
@@ -3610,16 +4156,6 @@
 			(type default)
 		)
 		(uuid "bd4069cb-ea47-48b2-9366-950517efb5bb")
-	)
-	(wire
-		(pts
-			(xy 72.39 34.29) (xy 74.93 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd798b3e-83e4-4b2c-877a-ca0e70848d22")
 	)
 	(wire
 		(pts
@@ -3643,6 +4179,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 24.13) (xy 179.07 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd230b71-603b-47b5-8cd9-52c6e875d95c")
+	)
+	(wire
+		(pts
 			(xy 86.36 96.52) (xy 96.52 96.52)
 		)
 		(stroke
@@ -3650,16 +4196,6 @@
 			(type default)
 		)
 		(uuid "db12fb89-7490-4f12-a9c6-b4235ed3918d")
-	)
-	(wire
-		(pts
-			(xy 72.39 36.83) (xy 72.39 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd3b3ecf-5a06-479d-8bc5-d948e0ba95d9")
 	)
 	(wire
 		(pts
@@ -3732,24 +4268,14 @@
 		(uuid "01e085a3-6a72-4e9d-8187-3e7b99034678")
 	)
 	(label "ButtonJoy"
-		(at 266.7 38.1 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "07bcbb24-6afa-4e29-bc71-63cd28706f07")
-	)
-	(label "VIN +"
-		(at 72.39 29.21 0)
+		(at 248.92 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "0f38c405-3154-4300-91ce-c55cb887425e")
+		(uuid "07bcbb24-6afa-4e29-bc71-63cd28706f07")
 	)
 	(label "CE{slash}D9"
 		(at 43.18 99.06 0)
@@ -3771,6 +4297,26 @@
 		)
 		(uuid "19511d78-8f6f-4719-86a6-adc69b387c7e")
 	)
+	(label "Button4"
+		(at 41.91 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1bd4be40-fb27-4745-8eaa-a831268d960c")
+	)
+	(label "Button4"
+		(at 199.39 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "243e6307-b0a5-401f-ac68-f1c175c567cc")
+	)
 	(label "OLED SDA"
 		(at 111.76 55.88 0)
 		(effects
@@ -3781,15 +4327,15 @@
 		)
 		(uuid "264b0c8a-7c05-4d22-8ab0-9d9cc9d0422b")
 	)
-	(label "Button4"
-		(at 41.91 81.28 0)
+	(label "3.3v"
+		(at 278.13 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "284f3f1a-7195-469c-8ad9-103b666b30cd")
+		(uuid "40748056-5cec-4d7e-99fc-1a3918798c1a")
 	)
 	(label "JoyVRX"
 		(at 87.63 96.52 0)
@@ -3881,16 +4427,6 @@
 		)
 		(uuid "5890a945-3deb-4a5c-aecc-ee165bc6bfdc")
 	)
-	(label ""
-		(at 41.91 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5d8cefe6-9a70-4153-9277-f3dc54e819c6")
-	)
 	(label "SCK{slash}D13"
 		(at 43.18 109.22 0)
 		(effects
@@ -3911,16 +4447,6 @@
 		)
 		(uuid "6b52f64c-a12f-41fe-a152-ef859e1938cd")
 	)
-	(label "Button4"
-		(at 199.39 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7ec5a7db-8092-4290-be2a-7e56cf58a723")
-	)
 	(label "OLED SDA"
 		(at 87.63 101.6 0)
 		(effects
@@ -3931,15 +4457,15 @@
 		)
 		(uuid "857e09c1-84e9-40ce-96f4-fb78a99a5a66")
 	)
-	(label "VOUT +"
-		(at 69.85 31.75 0)
+	(label "3.3v"
+		(at 278.13 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "8e89dd7e-41f8-4b2e-99d9-fee5777c9afd")
+		(uuid "8a37fbe5-69d2-47f4-9d53-96a953dfc45b")
 	)
 	(label "VOUT +"
 		(at 41.91 71.12 0)
@@ -3951,6 +4477,16 @@
 		)
 		(uuid "8f6b762a-ccce-4047-9208-ca76b66a216b")
 	)
+	(label "JoyVRY"
+		(at 255.27 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9a6a9d4c-7435-4aaa-9e2f-c9c5fb21df5d")
+	)
 	(label "MISO{slash}D12"
 		(at 43.18 106.68 0)
 		(effects
@@ -3961,6 +4497,16 @@
 		)
 		(uuid "9b65ef72-8128-4542-b746-39fbd4cee998")
 	)
+	(label "3.3v"
+		(at 278.13 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f101a7a-9ba3-4663-99dd-30433e7d3357")
+	)
 	(label "VOUT +"
 		(at 92.71 30.48 0)
 		(effects
@@ -3970,6 +4516,16 @@
 			(justify left bottom)
 		)
 		(uuid "ae90bec6-ef69-4da9-ac6a-bac90f219e59")
+	)
+	(label "3.3v"
+		(at 250.19 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b53aa739-a1be-4e16-a136-314089b6578d")
 	)
 	(label "VIN +"
 		(at 53.34 29.21 0)
@@ -4000,6 +4556,26 @@
 			(justify left bottom)
 		)
 		(uuid "c03e11e9-d15f-4a5d-955b-f5db2907f601")
+	)
+	(label "JoyVRX"
+		(at 255.27 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c1cfa25a-0b30-4ca2-8a21-377b45838d69")
+	)
+	(label "VOUT +"
+		(at 69.85 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c82e32ad-1b2c-496a-b1bb-65c6576e2258")
 	)
 	(label "CE{slash}D9"
 		(at 165.1 60.96 180)
@@ -4041,25 +4617,93 @@
 		)
 		(uuid "e5bbb111-40ac-4adc-a089-7f6f07d74d7b")
 	)
-	(label "JoyVRY"
-		(at 266.7 35.56 180)
+	(label "VIN +"
+		(at 69.85 34.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "f9c945f2-7b64-4702-86c7-d9819718056e")
+		(uuid "eb5753a7-1e09-48a0-bf76-8b66288525f6")
 	)
-	(label "JoyVRX"
-		(at 266.7 33.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
+	(symbol
+		(lib_id "power:GND")
+		(at 186.69 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "050c1b5a-7f8d-44d6-ada0-373a2cb366f1")
+		(property "Reference" "#PWR013"
+			(at 186.69 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
-			(justify right bottom)
 		)
-		(uuid "fdbab698-1741-4583-918f-3c639887c9ae")
+		(property "Value" "GND"
+			(at 186.69 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 186.69 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8b674821-e8bc-42a9-96c2-ad086d4029f2")
+		)
+		(instances
+			(project "Controller Circuit"
+				(path "/2fc4550b-3679-4304-ade8-8a401365d6ee"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -4221,6 +4865,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 182.88 24.13 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f3b9e27-b082-4cd8-922d-1b0f0fc0f2a9")
+		(property "Reference" "C2"
+			(at 182.88 16.51 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100 nF"
+			(at 182.88 19.05 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm"
+			(at 179.07 25.0952 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 182.88 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "06726e88-ce4e-48de-ae95-d641cefcfc48")
+		)
+		(pin "1"
+			(uuid "6767d6fb-0b80-444c-bf47-c0b499e8a0d9")
+		)
+		(instances
+			(project "Controller Circuit"
+				(path "/2fc4550b-3679-4304-ade8-8a401365d6ee"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_SPDT")
 		(at 46.99 31.75 0)
 		(unit 1)
@@ -4252,7 +4976,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
+		(property "Footprint" "Custom Parts:SW_Slide_10mm"
 			(at 46.99 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -4628,6 +5352,161 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 269.24 72.39 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "38b1efb2-bf17-4dde-b1ec-14919740ee89")
+		(property "Reference" "#PWR012"
+			(at 275.59 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 274.066 72.644 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 269.24 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 269.24 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 269.24 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a3ce2c8d-aa5f-4e98-878d-56fc9abc83e7")
+		)
+		(instances
+			(project "Controller Circuit"
+				(path "/2fc4550b-3679-4304-ade8-8a401365d6ee"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 186.69 24.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43911090-a37f-48a0-87d4-fc607a28fa88")
+		(property "Reference" "#PWR015"
+			(at 186.69 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 186.69 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 186.69 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "24f8ff64-560d-45cf-9b21-4f90a9c1b700")
+		)
+		(instances
+			(project "Controller Circuit"
+				(path "/2fc4550b-3679-4304-ade8-8a401365d6ee"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 106.68 38.1 0)
 		(unit 1)
 		(body_style 1)
@@ -4726,7 +5605,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 242.57 52.0701 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4895,7 +5774,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 204.47 52.0701 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5033,6 +5912,199 @@
 		)
 	)
 	(symbol
+		(lib_id "THB001P:THB001P")
+		(at 269.24 82.55 270)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "570a3a69-e095-44cd-ab3d-4bf564e4e895")
+		(property "Reference" "U4"
+			(at 271.78 81.2799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "THB001P"
+			(at 271.78 83.8199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Custom Parts:CNK_THB001P"
+			(at 269.24 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/THB001P_C&K.pdf"
+			(at 269.24 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Description" "Multi-Directional Thumbstick, 2 Axis, Center Momentary Switch, 12VDC, THB Series | C&K THB001P"
+			(at 269.24 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/THB001P_C&K.pdf"
+			(at 269.24 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "C&K"
+			(at 269.24 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "19.85mm"
+			(at 269.24 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MPN" "THB001P"
+			(at 269.24 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "27 Jan 22"
+			(at 269.24 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SOURCE_URL" "https://www.snapeda.com/parts/THB001P/C%2526K/view-part/"
+			(at 269.24 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 269.24 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "C"
+			(uuid "b3b71f74-5e15-4da5-b4ad-a8e5212469b2")
+		)
+		(pin "VR2_1"
+			(uuid "3d093bbf-1ae1-4df3-b30d-29351eef7207")
+		)
+		(pin "VR1_1"
+			(uuid "9da692e6-51fb-4b77-8366-b081ae009be9")
+		)
+		(pin "A"
+			(uuid "10c9be04-c22d-42d6-bc31-7482e7d74f1d")
+		)
+		(pin "VR2_3"
+			(uuid "dee1d675-1848-4454-9321-2ea42cdc2127")
+		)
+		(pin "D"
+			(uuid "1f0a962d-2707-4ab2-bdfb-702c4dbd344e")
+		)
+		(pin "B"
+			(uuid "b66f842c-0adf-4949-b78f-b8df76cbcf0f")
+		)
+		(pin "VR2_2"
+			(uuid "4b41775a-ad45-41bc-961f-46be65debcf0")
+		)
+		(pin "VR1_2"
+			(uuid "28dc1363-a362-4d71-90d9-c1d17ea2fbb1")
+		)
+		(pin "VR1_3"
+			(uuid "f1080b28-61e7-46b9-8107-b2ed7836f69b")
+		)
+		(instances
+			(project "Controller Circuit"
+				(path "/2fc4550b-3679-4304-ade8-8a401365d6ee"
+					(reference "U4")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 237.49 57.15 270)
 		(unit 1)
@@ -5111,7 +6183,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 262.89 27.94 180)
+		(at 269.24 90.17 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5119,10 +6191,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "71c9aac0-e62d-4e42-aa5f-5726c88774e4")
 		(property "Reference" "#PWR011"
-			(at 262.89 21.59 0)
+			(at 275.59 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5133,7 +6204,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 262.89 22.86 0)
+			(at 274.066 90.424 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5143,7 +6214,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 262.89 27.94 0)
+			(at 269.24 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5154,7 +6225,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 27.94 0)
+			(at 269.24 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5165,7 +6236,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 262.89 27.94 0)
+			(at 269.24 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5431,6 +6502,199 @@
 		)
 	)
 	(symbol
+		(lib_id "THB001P:THB001P")
+		(at 269.24 100.33 270)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "870890c1-47bf-42ed-9237-73fdbe671228")
+		(property "Reference" "U4"
+			(at 273.05 99.0599 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "THB001P"
+			(at 273.05 101.5999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Custom Parts:CNK_THB001P"
+			(at 269.24 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/THB001P_C&K.pdf"
+			(at 269.24 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Description" "Multi-Directional Thumbstick, 2 Axis, Center Momentary Switch, 12VDC, THB Series | C&K THB001P"
+			(at 269.24 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/THB001P_C&K.pdf"
+			(at 269.24 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "C&K"
+			(at 269.24 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "19.85mm"
+			(at 269.24 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MPN" "THB001P"
+			(at 269.24 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "27 Jan 22"
+			(at 269.24 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SOURCE_URL" "https://www.snapeda.com/parts/THB001P/C%2526K/view-part/"
+			(at 269.24 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 269.24 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "VR2_2"
+			(uuid "e58eaa0b-223b-4636-b26e-7c5cff4343bc")
+		)
+		(pin "VR2_1"
+			(uuid "8bb06a76-0440-4cc0-9a0d-de78db887f1c")
+		)
+		(pin "VR1_1"
+			(uuid "4a50e103-759d-44fa-9596-99c1aa2cc77d")
+		)
+		(pin "VR1_3"
+			(uuid "61ec861c-9e3e-4f05-8512-6ef9d0759cad")
+		)
+		(pin "VR2_3"
+			(uuid "38b95695-9deb-4e32-8bbf-9ab16c3e090e")
+		)
+		(pin "VR1_2"
+			(uuid "d3cad2f5-3eed-423e-a2a2-e6b591dafa08")
+		)
+		(pin "B"
+			(uuid "d471a175-29d4-4f9c-b676-7721f59ee4fd")
+		)
+		(pin "D"
+			(uuid "32b0acb4-646a-450e-bac3-b9bb59e84ab4")
+		)
+		(pin "A"
+			(uuid "ed9c7866-ba7d-43ce-8c78-429104acc5fa")
+		)
+		(pin "C"
+			(uuid "0150c69c-d515-41b7-831d-976b5dbb1b8b")
+		)
+		(instances
+			(project "Controller Circuit"
+				(path "/2fc4550b-3679-4304-ade8-8a401365d6ee"
+					(reference "U4")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 201.93 45.72 0)
 		(unit 1)
@@ -5533,7 +6797,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 229.87 52.0701 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5695,7 +6959,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 74.93 35.56 0)
+		(at 72.39 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5706,7 +6970,7 @@
 		(fields_autoplaced yes)
 		(uuid "954a1381-01c0-4b38-ad9e-495bf11897db")
 		(property "Reference" "#PWR06"
-			(at 74.93 41.91 0)
+			(at 72.39 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5717,7 +6981,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 74.93 40.64 0)
+			(at 72.39 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5727,7 +6991,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 35.56 0)
+			(at 72.39 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5738,7 +7002,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 35.56 0)
+			(at 72.39 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5749,7 +7013,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 35.56 0)
+			(at 72.39 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6112,7 +7376,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 217.17 52.0701 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6270,7 +7534,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "1K"
 			(at 57.15 52.832 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6323,6 +7587,277 @@
 			(project "Controller Circuit"
 				(path "/2fc4550b-3679-4304-ade8-8a401365d6ee"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 77.47 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0a6beea-4665-47a8-a7a7-dd9a909a0209")
+		(property "Reference" "#PWR016"
+			(at 77.47 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.47 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 77.47 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f56d16fc-deaf-4363-8e9d-2e63692084fd")
+		)
+		(instances
+			(project "Controller Circuit"
+				(path "/2fc4550b-3679-4304-ade8-8a401365d6ee"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "THB001P:THB001P")
+		(at 269.24 64.77 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9e26030-a623-46f3-8990-a34666631c29")
+		(property "Reference" "U4"
+			(at 271.78 63.4999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "THB001P"
+			(at 271.78 66.0399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Custom Parts:CNK_THB001P"
+			(at 269.24 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" "https://s3.amazonaws.com/snapeda/datasheet/THB001P_C&K.pdf"
+			(at 269.24 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Description" "Multi-Directional Thumbstick, 2 Axis, Center Momentary Switch, 12VDC, THB Series | C&K THB001P"
+			(at 269.24 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DATASHEET_URL" "https://s3.amazonaws.com/snapeda/datasheet/THB001P_C&K.pdf"
+			(at 269.24 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "C&K"
+			(at 269.24 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "19.85mm"
+			(at 269.24 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MPN" "THB001P"
+			(at 269.24 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "27 Jan 22"
+			(at 269.24 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SOURCE_URL" "https://www.snapeda.com/parts/THB001P/C%2526K/view-part/"
+			(at 269.24 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 269.24 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "VR1_3"
+			(uuid "c59d8d29-3523-4887-b129-d01cd4ae9d03")
+		)
+		(pin "B"
+			(uuid "29868dbd-470c-49b6-a12e-ba733e386aeb")
+		)
+		(pin "D"
+			(uuid "ae3c8d48-6fbf-461e-8670-f937439dd9c9")
+		)
+		(pin "VR2_3"
+			(uuid "d977188f-aa57-49f7-a1b7-6365eb6bdbc6")
+		)
+		(pin "VR2_2"
+			(uuid "29898303-690e-411a-ab32-7e013ee53745")
+		)
+		(pin "VR1_1"
+			(uuid "c0cef38d-cb1b-4bad-b23f-922d1fc75ee9")
+		)
+		(pin "VR2_1"
+			(uuid "eac551b9-526d-42a1-98f2-39633b137f5d")
+		)
+		(pin "C"
+			(uuid "ae722025-987f-416a-8bac-221090ae1625")
+		)
+		(pin "A"
+			(uuid "0551cf28-2c9f-4b7a-bec3-38d6388b774e")
+		)
+		(pin "VR1_2"
+			(uuid "0a09ec3c-d95c-43fc-9d10-16c23e8e92c1")
+		)
+		(instances
+			(project "Controller Circuit"
+				(path "/2fc4550b-3679-4304-ade8-8a401365d6ee"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -6407,8 +7942,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x05_Socket")
-		(at 271.78 33.02 0)
+		(lib_id "Device:C")
+		(at 33.02 74.93 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6417,29 +7952,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e90ae0e6-9cef-438f-9176-7a94bdf25d6f")
-		(property "Reference" "J1"
-			(at 271.145 43.18 0)
+		(uuid "f3f1ed93-e6a5-4abb-bbe6-3f33f6fb1d60")
+		(property "Reference" "C3"
+			(at 29.21 76.2001 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Joystick"
-			(at 271.145 40.64 0)
+		(property "Value" "10 uF"
+			(at 29.21 73.6601 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Custom Parts:CNK_THB001P"
-			(at 271.78 33.02 0)
+		(property "Footprint" "Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm"
+			(at 32.0548 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6450,7 +7987,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 271.78 33.02 0)
+			(at 33.02 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6460,8 +7997,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 271.78 33.02 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 33.02 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6470,26 +8007,174 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "5"
-			(uuid "3a78e129-0f16-4d44-99df-a2ff00bbdb14")
-		)
-		(pin "2"
-			(uuid "60fc3a82-9b42-47dd-be28-1d9c3ec647f5")
-		)
-		(pin "4"
-			(uuid "17a4625b-dc7b-4240-a433-be6d86aa3f0a")
 		)
 		(pin "1"
-			(uuid "ed818c79-baf4-4141-ac34-80b1651eb201")
+			(uuid "d76904b0-8e1f-4e8a-95de-7762db30f4e5")
 		)
-		(pin "3"
-			(uuid "3f26e240-256b-4243-83d5-134ead56c452")
+		(pin "2"
+			(uuid "49c5fb06-74b0-4b12-a06b-7be9fa41853f")
 		)
 		(instances
 			(project "Controller Circuit"
 				(path "/2fc4550b-3679-4304-ade8-8a401365d6ee"
-					(reference "J1")
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 182.88 36.83 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f4c4be8c-c5c6-493f-813f-75985280f48c")
+		(property "Reference" "C1"
+			(at 182.88 33.02 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47 uF"
+			(at 182.88 40.132 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Radial_D4.0mm_H5.0mm_P1.50mm"
+			(at 179.07 37.7952 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 182.88 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2afb76fe-c229-49bd-ab85-96a457836bd6")
+		)
+		(pin "1"
+			(uuid "e0d4e1f8-210e-46e0-b5ae-48208701e303")
+		)
+		(instances
+			(project "Controller Circuit"
+				(path "/2fc4550b-3679-4304-ade8-8a401365d6ee"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 33.02 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9c119b2-8ae3-4ae0-970c-bc83a3fc301c")
+		(property "Reference" "#PWR017"
+			(at 33.02 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.02 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 33.02 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "51bdb4ff-cc70-4ece-a38d-b1589ba0daeb")
+		)
+		(instances
+			(project "Controller Circuit"
+				(path "/2fc4550b-3679-4304-ade8-8a401365d6ee"
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
